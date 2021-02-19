@@ -16,11 +16,11 @@ public void draw()
 public void mousePressed()
 {
 	background(0);
-	if(count == 1) 
+	if (count == 1) 
 	{
 	count = 0;
 	}
-	else if(count == 0) 
+	else if (count == 0) 
 	{
 	count = 1;
 	}
@@ -46,29 +46,29 @@ public void fractal(int x, int y, int siz)
 	r = (int)(Math.random() * 255);
 	g = (int)(Math.random() * 255);
 	b = (int)(Math.random() * 255);
-	if(count == 1)
+	if (count == 1)
 	{
 		fill(r, g, b);
 		ellipse(x, y, siz, siz);
-		if(siz > 5)
+		if (siz > 5)
 		{
-			if(count2==1)
+			if (count2==1)
 			{
 				fractal(x - siz / 2, y, siz / 2);
 				fractal(x + siz / 2, y, siz / 2);
 			}
-			else if(count2 == 0)
+			else if (count2 == 0)
 			{
 				fractal(x, y - siz / 2, siz / 2);
 				fractal(x, y + siz / 2, siz / 2);
 			}
 		}
 	}
-	if(count == 0)
+	if (count == 0)
 	{
 		fill(r, g, b);
 		rect(x, y, siz, siz);
-		if(siz > 5)
+		if (siz > 5)
 		{
 			if(count2 == 1)
 			{
