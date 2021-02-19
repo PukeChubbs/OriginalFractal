@@ -7,8 +7,8 @@ public void setup()
   rectMode(CENTER);
 }
 
-public void draw(){
-  background(0);
+public void draw()
+{
   fractal(width / 2, height / 2, (width + height) / 2);
 }
 
