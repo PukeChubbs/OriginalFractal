@@ -3,6 +3,7 @@ int count = 0;
 int count2 = 1;
 public void setup()
 {
+  background(0);
   size(1000, 1000);
   rectMode(CENTER);
 }
