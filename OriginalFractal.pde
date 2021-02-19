@@ -8,7 +8,6 @@ public void setup()
 }
 
 public void draw(){
-  background(0);
   fractal(width / 2, height / 2, (width + height) / 2);
 }
 
